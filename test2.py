@@ -56,7 +56,7 @@ test2.Entry1_test.grid(row = 1, column = 0, columnspan = 10, rowspan = 2, sticky
 test2.Entry1_test.insert(0, "text here")
 def defocus(event):
   event.widget.master.focus_set()
-test2.down_test = ttk.Combobox(test2, values = ['1','2','reset','how this works',], width = 1, state = 'readonly')
+test2.down_test = ttk.Combobox(test2, values = ['1','2','reset',], width = 1, state = 'readonly')
 test2.down_test.grid(row = 6, column = 0, columnspan = 10, rowspan = 2, sticky = N+S+E+W)
 test2.down_test.bind('<FocusIn>', defocus)
 
